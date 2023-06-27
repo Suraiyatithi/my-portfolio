@@ -7,13 +7,15 @@ import img4 from '../assets/javascript-programming-language-icon.svg';
 import img5 from '../assets/tailwind-css-icon.svg';
 import img6 from '../assets/mongodb-svgrepo-com.svg';
 import img7 from '../assets/react-js-icon.svg'
+import bg6 from '../assets/23324.jpg'
 
 
 
 const Skill = () => {
     return (
-        <div>
-            <p className="text-center">Technical & Professional Skills</p>
+        <div className="background" style={{backgroundImage:`url(${bg6})`}}>
+       <div className="bg">
+       <p className="text-center">Technical & Professional Skills</p>
             <h3 className="text-center">My Skills</h3>
      <div className="row row-cols-sm-1 row-cols-lg-2 p-4">
         <div className=" col skill-left text-center ">
@@ -121,6 +123,7 @@ const Skill = () => {
           </div>
         </div>
      </div>
+       </div>
         </div>
     );
 };

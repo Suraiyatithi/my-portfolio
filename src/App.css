@@ -396,3 +396,23 @@ border-right: 0.08em solid #666;
     width:72%
   }
 }
+/* .container {
+
+  background-repeat: no-repeat;
+ 
+ 
+} */
+
+
+.background {
+  /* background-image: url('your-image.jpg'); */
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto; /* Adds a scrollbar if the content exceeds the viewport height */
+}
+.bg{
+  background-color: #2d2f34;
+  opacity: 0.6;
+}
