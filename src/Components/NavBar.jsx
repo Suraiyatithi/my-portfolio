@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import pdf from '../assets/ResumeofsuraiyaC.pdf'
 
 const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -22,6 +23,15 @@ const NavBar = () => {
     const onUpdateActiveLink = (value) => {
       setActiveLink(value);
     }
+  
+
+    const handleDownload = () => {
+      const link = document.createElement('a');
+      link.href = {pdf};
+      link.download = 'ResumeofsuraiyaC.pdf';
+    
+      link.click();
+    };
     return (
         <div>
               <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
@@ -47,6 +57,9 @@ const NavBar = () => {
               {/* <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
               </HashLink> */}
+                  <button onClick={handleDownload}>
+      Download Resume
+    </button>
             </span>
           </Navbar.Collapse>
         </Container>

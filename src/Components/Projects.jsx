@@ -80,7 +80,7 @@ const Projects = () => {
  <li>Node Js & Express js in Serversite</li>
     </ul>
         </Card.Text>
- <Link to=''>       <Button className='mt-3'  onClick={handleShowModal1} variant="primary">Show details</Button></Link>
+ <Link to=''>       <Button style={{background:"#66179a"}} className='mt-3 text-white'  onClick={handleShowModal1} variant="">Show details</Button></Link>
       </Card.Body>
     </Card>
         </div>
@@ -111,7 +111,7 @@ const Projects = () => {
 
       </ul>
         </Card.Text>
-        <Button className='' onClick={handleShowModal2} variant="primary">Show Details</Button>
+        <Button style={{background:"#66179a"}} className='text-white' onClick={handleShowModal2} variant="">Show Details</Button>
       </Card.Body>
     </Card>
         </div>
@@ -139,7 +139,7 @@ const Projects = () => {
         </ul>
         </Card.Text>
      {/* <Link to='https://baking-queen-69016.web.app/'> */}
-       <Button className='mt-4' onClick={handleShowModal3} variant="primary">Show details</Button>
+       <Button style={{background:"#66179a"}} className='mt-4 text-white' onClick={handleShowModal3} variant="">Show details</Button>
       </Card.Body>
     </Card>
         </div>
@@ -148,7 +148,7 @@ const Projects = () => {
               
       <Modal show={showModal1} onHide={handleCloseModal1}>
         <Modal.Header closeButton>
-          <Modal.Title className='text-dark'>Toy World</Modal.Title>
+          <Modal.Title style={{color:"#66179a"}} className=' mt-4'>Toy World</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {/* Add your modal content here */}
@@ -160,7 +160,7 @@ const Projects = () => {
      <Link></Link>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseModal1}>
+          <Button className='text-white' style={{background:"#66179a"}} variant="" onClick={handleCloseModal1}>
             Close
           </Button>
         </Modal.Footer>
@@ -169,7 +169,7 @@ const Projects = () => {
         
       <Modal show={showModal2} onHide={handleCloseModal2}>
         <Modal.Header closeButton>
-          <Modal.Title className='text-dark'>MakeUp Schooling</Modal.Title>
+          <Modal.Title style={{color:"#66179a"}} className=' mt-4'>MakeUp Schooling</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {/* Add your modal content here */}
@@ -181,7 +181,7 @@ const Projects = () => {
      <Link></Link>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseModal2}>
+          <Button className='text-white' style={{background:"#66179a"}} variant="" onClick={handleCloseModal2}>
             Close
           </Button>
         </Modal.Footer>
@@ -191,7 +191,7 @@ const Projects = () => {
         
       <Modal show={showModal3} onHide={handleCloseModal3}>
         <Modal.Header closeButton>
-          <Modal.Title className='text-dark'>Baking Queen</Modal.Title>
+          <Modal.Title style={{color:"#66179a"}} className=' mt-4'>Baking Queen</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {/* Add your modal content here */}
@@ -203,7 +203,7 @@ const Projects = () => {
      <Link></Link>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseModal3}>
+          <Button className='text-white' style={{background:"#66179a"}} variant="" onClick={handleCloseModal3}>
             Close
           </Button>
         </Modal.Footer>

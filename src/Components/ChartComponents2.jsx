@@ -8,7 +8,7 @@ const data = [
   { name: 'Group D', value: 200 },
 ];
 
-const COLORS = ['#00FFFF', '#00FFFF', '#66000000', '#00FFFF'];
+const COLORS = ['#66179a', '#66179a', '#66000000', '#66179a'];
 
 class ChartComponent2 extends PureComponent {
   render() {
@@ -20,7 +20,7 @@ class ChartComponent2 extends PureComponent {
           cy={250}
           innerRadius={60}
           outerRadius={80}
-          fill="#8884d8"
+          fill="#66179a"
           paddingAngle={0}
           dataKey="value"
         >
