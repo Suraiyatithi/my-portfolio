@@ -22,6 +22,7 @@ import img15 from '../assets/Screenshot (52).png';
 import img16 from '../assets/Screenshot (54).png';
 import imgc3 from '../assets/Screenshot (51).png';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 const Projects = () => {
 
@@ -52,13 +53,21 @@ const Projects = () => {
   const handleCloseModal2 = () => {
     setShowModal2(false);
   };
+
+  const GradientBorder = styled.div`
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #ff0000, #66179a, #0000ff);
+
+`;
     return (
         <div className="m-5 ">
           <h3 className='text-center mb-5'>My Projects </h3>
             <div className='row row-cols-sm-1 row-cols-lg-3'>
-          <div className="col mb-4">
+      <div className="col mb-4">
+     
           <Card className='bg-dark text-white ' style={{ width: '24rem' }}>
-    
+          <GradientBorder> 
 
 <Marquee speed={300}>
          
@@ -82,11 +91,15 @@ const Projects = () => {
         </Card.Text>
  <Link to=''>       <Button style={{background:"#66179a"}} className='mt-3 text-white'  onClick={handleShowModal1} variant="">Show details</Button></Link>
       </Card.Body>
+      </GradientBorder>
     </Card>
+  
         </div>
 
         <div className="col mb-4">
+      
         <Card className='bg-dark text-white' style={{ width: '24rem' }}>
+        <GradientBorder>
         <Marquee speed={300}>
          
          <Card.Img className='w-25' variant="top" src={imgc2}/>
@@ -113,10 +126,14 @@ const Projects = () => {
         </Card.Text>
         <Button style={{background:"#66179a"}} className='text-white' onClick={handleShowModal2} variant="">Show Details</Button>
       </Card.Body>
+      </GradientBorder>
     </Card>
+  
         </div>
-        <div className="col mb-4">
+    <div className="col mb-4">
+
         <Card className='bg-dark text-white' style={{ width: '24rem' }}>
+        <GradientBorder> 
         <Marquee speed={300}>
          
          <Card.Img className='w-25' variant="top" src={imgc3}/>
@@ -141,7 +158,9 @@ const Projects = () => {
      {/* <Link to='https://baking-queen-69016.web.app/'> */}
        <Button style={{background:"#66179a"}} className='mt-4 text-white' onClick={handleShowModal3} variant="">Show details</Button>
       </Card.Body>
+      </GradientBorder>
     </Card>
+    
         </div>
             </div> 
             <div className="">

@@ -10,7 +10,6 @@ import img7 from '../assets/react-js-icon.svg'
 import bg6 from '../assets/23324.jpg'
 
 
-
 const Skill = () => {
     return (
         <div className="background" style={{backgroundImage:`url(${bg6})`}}>

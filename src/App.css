@@ -396,12 +396,13 @@ border-right: 0.08em solid #666;
     width:72%
   }
 }
-/* .container {
+.container1 {
 
   background-repeat: no-repeat;
- 
- 
-} */
+  /* height: 50vh;
+  width: 50%; */
+  background-size: cover;
+}
 
 
 .background {
